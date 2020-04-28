@@ -1,0 +1,118 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(179, 179, 179);
+}
+
+button{
+    width: 125px;
+    height: 50px;
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10px;
+    border-style: none;
+    transition-duration: 0.4s;
+}
+
+.dec, #stopButton, #resetButton{
+    background-color: white;
+    border: 2px solid rgb(255, 147, 147);
+}
+
+.dec:hover, #stopButton:hover, #resetButton:hover{
+    background-color: rgb(255, 147, 147);
+    border: 2px solid rgb(255, 0, 0);
+}
+
+.dec:active, #stopButton:active, #resetButton:active{
+    transition-duration: 0.1s;
+    background-color: red;
+    color: white;
+}
+
+.inc, #startButton{
+    background-color: white;
+    border: 2px solid rgb(150, 255, 147);
+}
+
+.inc:hover, #startButton:hover{
+    background-color: rgb(150, 255, 147);
+    border: 2px solid green;
+}
+
+.inc:active, #startButton:active{
+    transition-duration: 0.1s;
+    background-color: green;
+    color: white;
+}
+
+#pauseButton{
+    background-color: white;
+    border: 2px solid rgb(255, 246, 163);
+}
+
+#pauseButton:hover{
+    background-color: rgb(255, 246, 163);
+    border: 2px solid yellow;
+}
+
+#pauseButton:active{
+    transition-duration: 0.1s;
+    background-color: yellow;
+    /* color: gray; */
+}
+
+.subHeadings{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 1350px;
+    justify-content: space-evenly;
+}
+
+.timeSet{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 22%;
+    transform: translate(-50%);
+    width: 1000px;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.timeSet > span{
+    font-size: 3em;
+}
+
+.clock{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clock > .controls{
+    display: flex;
+    width: 600px;
+    position: relative;
+    transform: translateY(400%);
+    justify-content: space-around;
+}
+
+.clock > .controls > button{
+    font-size: 1.5em;
+}
+
+.clock > .timer > span{
+    font-size: 5em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 0);
+}
+
+.clock > h2{
+    padding-bottom: 25px;
+    text-align: center;
+}
