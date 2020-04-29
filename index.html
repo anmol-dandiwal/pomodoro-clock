@@ -12,19 +12,19 @@
                 <h3>Break</h3>
             </div>
             <div class="timeSet">
-                <button class="dec">-</button>
-                <span class="sessionTime">25</span>
-                <button class="inc">+</button>
+                <button class="dec" id="sessionDec">-</button>
+                <span id="sessionTime">25</span>
+                <button class="inc" id="sessionInc">+</button>
 
-                <button class="dec">-</button>
-                <span class="breakTime">5</span>
-                <button class="inc">+</button>
+                <button class="dec" id="breakDec">-</button>
+                <span id="breakTime">5</span>
+                <button class="inc" id="breakInc">+</button>
             </div>
         </div>
         <div class="clock">
             <h2>Session</h2>
             <div class="timer">
-                <span class="currentTime">25:00</span>
+                <span id="currentTime">25:00</span>
             </div>
             <div class="controls">
                 <button id="startButton">Start</button>
@@ -33,5 +33,6 @@
                 <button id="resetButton">Reset</button>
             </div>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
